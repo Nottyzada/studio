@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio of a Roblox game scripter" />
+  <title>Portfolio - Notty</title>
+  <link rel="icon" href="../../imagens/Logo.png" type="image/png" />
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <!-- Fixed Navbar at the top -->
+  <nav class="top-navbar">
+    <button id="toggle-sidebar" class="hamburger" aria-label="Open sidebar menu">☰</button>
+    <ul class="navbar-links">
+      <li><a href="#about">About Me</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Sidebar -->
+  <div id="sidebar" class="sidebar hidden">
+    <button id="close-sidebar" aria-label="Fechar menu lateral">✖</button>
+    <ul>
+      <li><a href="../../">Linguagem</a></li>
+    </ul>
+  </div>
+
+  <!-- Hero Section -->
+  <header class="hero">
+    <div class="container">
+      <h1>Hello, my name is <span class="highlight">Arthur</span></h1>
+      <p>I’m an amateur at creating websites and scripts for the Roblox platform.</p>
+    </div>
+  </header>
+
+  <!-- About Me Section -->
+  <section id="about" class="about-section">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>
+        I’m a scripter specializing in developing gameplay mechanics and innovative systems for Roblox games. With a passion for programming and creativity, my focus is on creating immersive experiences.
+      </p>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects-section">
+    <div class="container">
+      <h2>Some of My Systems</h2>
+      <div class="projects-grid">
+        <!-- Project 1 -->
+        <div class="project-card">
+          <img
+            src="https://i.ibb.co/23swKVX/imagem-2024-12-05-212242304.png"
+            alt="Image of the VTR Spawn System"
+            class="project-image"
+          />
+          <h3>VTR Spawn System</h3>
+          <p>
+            VTR Spawn system with support for groups and various types. Additionally, I offer version 2.0 with additional features available for purchase.
+          </p>
+          <button class="btn saiba-mais">Learn More</button>
+          <div class="project-details">
+            <p>
+              This project includes advanced spawn scripts, vehicle customization, and group integration on Roblox.
+            </p>
+            <p>
+              <a href="https://www.roblox.com/pt/games/95755216603511/Spwn-VTR-maluco-la" target="_blank">Test the system</a> |
+              <a href="https://www.mediafire.com/file/vpcewowmivg4sdy/SistemaVTR-V1-Nottyzada.rbxm/file" target="_blank">Install</a>
+            </p>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card">
+          <iframe
+            src="https://www.youtube.com/embed/7VC1f_AqyIA"
+            title="Bank System Video"
+            class="project-video"
+            allowfullscreen
+          ></iframe>
+          <h3>Bank System</h3>
+          <p>
+            This is a demonstration system created to showcase the quality of my products! If you’re interested in a custom and exclusive system, contact me to develop a tailored solution for your needs!
+          </p>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card">
+          <iframe
+            src="https://www.youtube.com/embed/13tLQ2Q9sPc"
+            title="Safe and Name System Video"
+            class="project-video"
+            allowfullscreen
+          ></iframe>
+          <h3>Safe and Name System</h3>
+          <p>
+            Provide a safe and personalized experience for players in your Roblox game! This advanced system includes damage-protection zones (Safe Zones) and a configurable naming system to display personalized identities.
+          </p>
+          <button class="btn saiba-mais">Learn More</button>
+          <div class="project-details">
+            <p>
+              Configure invisible Safe Zones that protect players’ health upon entry and return to vulnerability upon exit. Customize displayed names in the GUI to provide greater immersion in your game. Easy to install and customize, ideal for any gameplay type!
+            </p>
+            <p>
+              <a href="https://www.roblox.com/pt/games/85343492049629/BasePlate-Encomendas" target="_blank">Test the system</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact-section">
+    <div class="container">
+      <h2>Contact</h2>
+      <p>Contact me directly via my Discord!</p>
+      <div class="discord-contact">
+        <img
+          src="https://cdn-icons-png.flaticon.com/512/5968/5968756.png"
+          alt="Discord Logo"
+          class="discord-logo"
+        />
+        <p>
+          Click the button below to join my server or send me a message:
+        </p>
+        <a
+          href="https://discord.gg/GvfnfVGfpD"
+          target="_blank"
+          class="btn discord-btn"
+        >
+          Access Discord
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>
+        Created with ❤️ by <strong>Nottyzada</strong>. All rights reserved &copy; 2024.
+      </p>
+      <ul class="footer-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

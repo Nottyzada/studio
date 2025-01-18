@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manutenção</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      height: 100vh;
+      background: linear-gradient(45deg, #4a90e2, #005bbb);
+      font-family: 'Roboto', sans-serif;
+      color: white;
+      text-align: center;
+      overflow: hidden;
+    }
+
+    .container {
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    h1 {
+      font-size: 3em;
+      margin-bottom: 10px;
+      background: linear-gradient(to right, #f39c12, #f7d07a);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: pulse 2s infinite;
+    }
+
+    p {
+      font-size: 1.5em;
+      margin-bottom: 30px;
+      color: #f4f4f9;
+      animation: slideUp 1.5s ease-out;
+    }
+
+    .loader {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+
+    .loader div {
+      width: 15px;
+      height: 15px;
+      background-color: white;
+      border-radius: 50%;
+      animation: bounce 1.5s infinite ease-in-out;
+    }
+
+    .loader div:nth-child(1) {
+      animation-delay: 0s;
+    }
+
+    .loader div:nth-child(2) {
+      animation-delay: 0.2s;
+    }
+
+    .loader div:nth-child(3) {
+      animation-delay: 0.4s;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      font-size: 1em;
+      font-weight: bold;
+      color: white;
+      background: #f39c12;
+      border: none;
+      border-radius: 5px;
+      text-decoration: none;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .btn:hover {
+      background: #d87b09;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    @keyframes pulse {
+      0%, 100% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.1);
+      }
+    }
+
+    @keyframes slideUp {
+      from {
+        transform: translateY(20px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    @keyframes bounce {
+      0%, 80%, 100% {
+        transform: scale(0);
+      }
+      40% {
+        transform: scale(1);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Manutenção</h1>
+    <p>
+      <span lang="pt-br">Estamos trabalhando para melhorar sua experiência. Volte mais tarde!</span>
+      <span lang="en" style="display: none;">We are working to improve your experience. Please check back later!</span>
+      <span lang="es" style="display: none;">Estamos trabajando para mejorar su experiencia. ¡Vuelva más tarde!</span>
+    </p>
+    <div class="loader">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <a href="../" class="btn">
+      <span lang="pt-br">Voltar</span>
+      <span lang="en" style="display: none;">Back</span>
+      <span lang="es" style="display: none;">Volver</span>
+    </a>
+  </div>
+  <script>
+    // Atualiza o idioma com base no atributo lang do HTML
+    const lang = document.documentElement.lang;
+    document.querySelectorAll(`[lang]:not([lang="${lang}"])`).forEach(el => {
+      el.style.display = "none";
+    });
+    document.querySelectorAll(`[lang="${lang}"]`).forEach(el => {
+      el.style.display = "block";
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portafolio de un programador de juegos de Roblox" />
+  <title>Portafolio - Notty</title>
+  <link rel="icon" href="../../imagens/Logo.png" type="image/png" />
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <!-- Barra de navegación fija en la parte superior -->
+  <nav class="top-navbar">
+    <button id="toggle-sidebar" class="hamburger" aria-label="Abrir el menú lateral">☰</button>
+    <ul class="navbar-links">
+      <li><a href="#about">Sobre mí</a></li>
+      <li><a href="#projects">Proyectos</a></li>
+      <li><a href="#contact">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <!-- Barra lateral -->
+  <div id="sidebar" class="sidebar hidden">
+    <button id="close-sidebar" aria-label="Cerrar el menú lateral">✖</button>
+    <ul>
+      <li><a href="../../">Idioma</a></li>
+    </ul>
+  </div>
+
+  <!-- Sección Hero -->
+  <header class="hero">
+    <div class="container">
+      <h1>Hola, mi nombre es <span class="highlight">Arthur</span></h1>
+      <p>Soy un aficionado a la creación de sitios web y scripts para la plataforma Roblox.</p>
+    </div>
+  </header>
+
+  <!-- Sección Sobre mí -->
+  <section id="about" class="about-section">
+    <div class="container">
+      <h2>Sobre mí</h2>
+      <p>
+        Soy un programador especializado en el desarrollo de mecánicas de juego y sistemas innovadores para juegos de Roblox. Con una pasión por la programación y la creatividad, mi enfoque está en crear experiencias inmersivas.
+      </p>
+    </div>
+  </section>
+
+  <!-- Sección de Proyectos -->
+  <section id="projects" class="projects-section">
+    <div class="container">
+      <h2>Algunos de mis sistemas</h2>
+      <div class="projects-grid">
+        <!-- Proyecto 1 -->
+        <div class="project-card">
+          <img
+            src="https://i.ibb.co/23swKVX/imagem-2024-12-05-212242304.png"
+            alt="Imagen del sistema de generación de vehículos VTR"
+            class="project-image"
+          />
+          <h3>Sistema de generación VTR</h3>
+          <p>
+            Sistema de generación VTR con soporte para grupos y varios tipos. Además, ofrezco la versión 2.0 con características adicionales disponibles para la compra.
+          </p>
+          <button class="btn saiba-mais">Saber más</button>
+          <div class="project-details">
+            <p>
+              Este proyecto incluye scripts avanzados de generación, personalización de vehículos e integración de grupos en Roblox.
+            </p>
+            <p>
+              <a href="https://www.roblox.com/pt/games/95755216603511/Spwn-VTR-maluco-la" target="_blank">Probar el sistema</a> |
+              <a href="https://www.mediafire.com/file/vpcewowmivg4sdy/SistemaVTR-V1-Nottyzada.rbxm/file" target="_blank">Instalar</a>
+            </p>
+          </div>
+        </div>
+
+        <!-- Proyecto 2 -->
+        <div class="project-card">
+          <iframe
+            src="https://www.youtube.com/embed/7VC1f_AqyIA"
+            title="Video del sistema bancario"
+            class="project-video"
+            allowfullscreen
+          ></iframe>
+          <h3>Sistema bancario</h3>
+          <p>
+            ¡Este es un sistema de demostración creado para mostrar la calidad de mis productos! Si estás interesado en un sistema personalizado y exclusivo, ¡contáctame para desarrollar una solución adaptada a tus necesidades!
+          </p>
+        </div>
+
+        <!-- Proyecto 3 -->
+        <div class="project-card">
+          <iframe
+            src="https://www.youtube.com/embed/13tLQ2Q9sPc"
+            title="Video del sistema de zonas seguras y nombres"
+            class="project-video"
+            allowfullscreen
+          ></iframe>
+          <h3>Sistema de zonas seguras y nombres</h3>
+          <p>
+            ¡Proporciona una experiencia segura y personalizada para los jugadores de tu juego de Roblox! Este sistema avanzado incluye zonas de protección contra daños (Zonas Seguras) y un sistema de nombres configurable para mostrar identidades personalizadas.
+          </p>
+          <button class="btn saiba-mais">Saber más</button>
+          <div class="project-details">
+            <p>
+              Configura Zonas Seguras invisibles que protegen la salud de los jugadores al entrar y vuelven a ser vulnerables al salir. Personaliza los nombres mostrados en la GUI para proporcionar una mayor inmersión en tu juego. Fácil de instalar y personalizar, ¡ideal para cualquier tipo de juego!
+            </p>
+            <p>
+              <a href="https://www.roblox.com/pt/games/85343492049629/BasePlate-Encomendas" target="_blank">Probar el sistema</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección de Contacto -->
+  <section id="contact" class="contact-section">
+    <div class="container">
+      <h2>Contacto</h2>
+      <p>¡Contáctame directamente a través de mi Discord!</p>
+      <div class="discord-contact">
+        <img
+          src="https://cdn-icons-png.flaticon.com/512/5968/5968756.png"
+          alt="Logo de Discord"
+          class="discord-logo"
+        />
+        <p>
+          Haz clic en el botón de abajo para unirte a mi servidor o enviarme un mensaje:
+        </p>
+        <a
+          href="https://discord.gg/GvfnfVGfpD"
+          target="_blank"
+          class="btn discord-btn"
+        >
+          Acceder a Discord
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pie de página -->
+  <footer>
+    <div class="container">
+      <p>
+        Creado con ❤️ por <strong>Nottyzada</strong>. Todos los derechos reservados &copy; 2024.
+      </p>
+      <ul class="footer-links">
+        <li><a href="#about">Sobre mí</a></li>
+        <li><a href="#projects">Proyectos</a></li>
+        <li><a href="#contact">Contacto</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
